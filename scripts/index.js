@@ -1,10 +1,10 @@
-import { getRepositories } from "/scripts/repositories.js";
-import { getEvents } from "/scripts/events.js";
+import { getRepositories } from "scripts/repositories.js";
+import { getEvents } from "scripts/events.js";
 
-import { getUser } from "/scripts/user.js";
+import { getUser } from "scripts/user.js";
 
-import { user } from "/scripts/objects/user.js";
-import { screen } from "/scripts/objects/screen.js";
+import { user } from "scripts/objects/user.js";
+import { screen } from "scripts/objects/screen.js";
 
 //Ação do botão
 const btnSearch = document
