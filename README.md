@@ -20,4 +20,4 @@
 + Busca de API direta e simples;
 + Fetch
 
-<center><img src ="https://github.com/T4goz2005/GIt-hub-API/assets/116327263/1c9a9ad6-d49f-4f37-8b88-8627047896a2"></center>
+<center><img src ="https://github.com/T4goz2005/Search-API-GITHUB/assets/116327263/d99561cf-9b75-4d14-acfa-ea605019dbf3"></center>

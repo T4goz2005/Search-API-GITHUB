@@ -1,3 +1,5 @@
+import { baseUrl, repositoriesQuantity } from "/scripts/variables.js";
+
 import { getRepositories } from "/scripts/repositories.js";
 import { getEvents } from "/scripts/events.js";
 
