@@ -1,10 +1,10 @@
-import { getRepositories } from "/scripts/repositories.js";
-import { getEvents } from "/scripts/events.js";
+import { getRepositories } from "./repositories.js";
+import { getEvents } from "./events.js";
 
-import { getUser } from "/scripts/user.js";
+import { getUser } from "./user/user.js";
 
-import { user } from "/scripts/objects/user.js";
-import { screen } from "/scripts/objects/screen.js";
+import { user } from "./objects/user.js";
+import { screen } from "./objects/screen.js";
 
 //Ação do botão
 const btnSearch = document
@@ -39,9 +39,6 @@ async function getUserData(userName) {
   const userResponse = await getUser(userName);
   const repositoriesResponse = await getRepositories(userName);
   const eventsResponse = await getEvents(userName);
-
-  console.log(eventsResponse);
-  console.log(repositoriesResponse);
 
   if (validateEmptyteInput(userName)) return; //Validação de Input
 
