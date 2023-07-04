@@ -10,7 +10,7 @@
 + CSS3
 + JavaScript Puro
 
-<h2>link do Projeto: </h2>
+<h2>link do Projeto: https://t4goz2005.github.io/Search-API-GITHUB/</h2>
 
 <h2>Oque eu apreendi com esse projeto? </h2>
 
