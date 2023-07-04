@@ -51,7 +51,7 @@ const screen = {
 
     if (user.events.length > 0) {
       this.userProfile.innerHTML += `<div class="events ">
-                                        <h2>Eventos 🛠</h2>
+                                        <h2>Ultimos Eventos 🛠</h2>
                                         <div class="ulEvents">
                                           <ul>${eventsItens}</ul>
                                         <div>

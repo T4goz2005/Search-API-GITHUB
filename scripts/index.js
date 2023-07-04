@@ -6,17 +6,15 @@ import { getUser } from "./user/user.js";
 import { user } from "./objects/user.js";
 import { screen } from "./objects/screen.js";
 
-//Ação do botão
 const btnSearch = document
   .getElementById("btn-search")
   .addEventListener("click", () => {
     const userName = document.getElementById("input-search").value;
 
-    if (validateEmptyteInput(userName)) return; //Validação de Input
+    if (validateEmptyteInput(userName)) return;
     getUserData(userName);
   });
 
-// Buscar na tecla Enter
 document.getElementById("input-search").addEventListener("keyup", (e) => {
   const userName = e.target.value;
   const key = e.which || e.keyCode;
@@ -27,7 +25,6 @@ document.getElementById("input-search").addEventListener("keyup", (e) => {
   }
 });
 
-//Validação de Input
 function validateEmptyteInput(userName) {
   if (userName.length === 0) {
     alert("Preencha o campo com o Nome do Usuario 💢");
@@ -40,7 +37,7 @@ async function getUserData(userName) {
   const repositoriesResponse = await getRepositories(userName);
   const eventsResponse = await getEvents(userName);
 
-  if (validateEmptyteInput(userName)) return; //Validação de Input
+  if (validateEmptyteInput(userName)) return;
 
   if (userResponse.message === "Not Found") {
     screen.renderNotFound();
